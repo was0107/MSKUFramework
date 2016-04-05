@@ -132,8 +132,7 @@ https://github.com/was0107/MSKUFramework
 -
 提供三种测试情况，一为随机组织数据，二为QQ联系人界面，三为沙盒文件查看，其中前两者数据为静态数据，沙盒数据由点击查看进行数据的动态生成，且仅生成一次。效果请参照下图
 
-<img src="https://raw.githubusercontent.com/was0107/treeTableView/master/images/qq.gif" width="50%" >
-<img src="https://raw.githubusercontent.com/was0107/treeTableView/master/images/file.gif" width="50%">
+<img src="https://raw.githubusercontent.com/was0107/MSKUFramework/master/images/sku.gif" width="50%" >
 
 使用
 -
