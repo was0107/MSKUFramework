@@ -28,18 +28,22 @@
     self = [super initWithFrame:frame];
     if (self) {
         _contentSize = frame.size;
-        _padding = 8.0f;
-        _fontSize = 20.0f;
-        [self addSubview:self.tipLabel];
-        [self addSubview:self.decreaseButton];
-        [self addSubview:self.textField];
-        [self addSubview:self.increaseButton];
-        
-        self.minNumber = 1;
-        self.maxNumber = NSUIntegerMax;
-        self.backgroundColor = [UIColor clearColor];
+        [self commonInit];
     }
     return self;
+}
+
+- (void) commonInit {
+    _padding = 8.0f;
+    _fontSize = 20.0f;
+    [self addSubview:self.tipLabel];
+    [self addSubview:self.decreaseButton];
+    [self addSubview:self.textField];
+    [self addSubview:self.increaseButton];
+    
+    self.minNumber = 1;
+    self.maxNumber = NSUIntegerMax;
+    self.backgroundColor = [UIColor clearColor];
 }
 
 #pragma mark --
