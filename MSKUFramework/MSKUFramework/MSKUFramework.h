@@ -19,4 +19,3 @@ FOUNDATION_EXPORT const unsigned char MSKUFrameworkVersionString[];
 
 #import "NumberChooseControl.h"
 #import "SKUControl.h"
-#import "UIView+Factory.h"

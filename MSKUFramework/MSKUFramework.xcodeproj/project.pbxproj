@@ -28,8 +28,6 @@
 		62DB04CD1CB40608004226F2 /* NumberChooseControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DB04C71CB40608004226F2 /* NumberChooseControl.m */; };
 		62DB04CE1CB40608004226F2 /* SKUControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 62DB04C81CB40608004226F2 /* SKUControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62DB04CF1CB40608004226F2 /* SKUControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DB04C91CB40608004226F2 /* SKUControl.m */; };
-		62DB04D41CB40687004226F2 /* UIView+Factory.h in Headers */ = {isa = PBXBuildFile; fileRef = 62DB04D21CB40687004226F2 /* UIView+Factory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		62DB04D51CB40687004226F2 /* UIView+Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DB04D31CB40687004226F2 /* UIView+Factory.m */; };
 		62DB04E31CB4078D004226F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DB04E21CB4078D004226F2 /* main.m */; };
 		62DB04E61CB4078D004226F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DB04E51CB4078D004226F2 /* AppDelegate.m */; };
 		62DB04E91CB4078D004226F2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DB04E81CB4078D004226F2 /* ViewController.m */; };
@@ -69,8 +67,6 @@
 		62DB04C71CB40608004226F2 /* NumberChooseControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberChooseControl.m; sourceTree = "<group>"; };
 		62DB04C81CB40608004226F2 /* SKUControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKUControl.h; sourceTree = "<group>"; };
 		62DB04C91CB40608004226F2 /* SKUControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKUControl.m; sourceTree = "<group>"; };
-		62DB04D21CB40687004226F2 /* UIView+Factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Factory.h"; sourceTree = "<group>"; };
-		62DB04D31CB40687004226F2 /* UIView+Factory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Factory.m"; sourceTree = "<group>"; };
 		62DB04DF1CB4078D004226F2 /* testSKUApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testSKUApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62DB04E21CB4078D004226F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		62DB04E41CB4078D004226F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -169,8 +165,6 @@
 				62DB04C71CB40608004226F2 /* NumberChooseControl.m */,
 				62DB04C81CB40608004226F2 /* SKUControl.h */,
 				62DB04C91CB40608004226F2 /* SKUControl.m */,
-				62DB04D21CB40687004226F2 /* UIView+Factory.h */,
-				62DB04D31CB40687004226F2 /* UIView+Factory.m */,
 			);
 			path = SKU;
 			sourceTree = "<group>";
@@ -215,7 +209,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62DB04D41CB40687004226F2 /* UIView+Factory.h in Headers */,
 				62DB04CE1CB40608004226F2 /* SKUControl.h in Headers */,
 				62DB04CC1CB40608004226F2 /* NumberChooseControl.h in Headers */,
 				62DB04AF1CB405CA004226F2 /* MSKUFramework.h in Headers */,
@@ -402,7 +395,6 @@
 			files = (
 				62DB04CD1CB40608004226F2 /* NumberChooseControl.m in Sources */,
 				62DB04CF1CB40608004226F2 /* SKUControl.m in Sources */,
-				62DB04D51CB40687004226F2 /* UIView+Factory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -698,6 +690,7 @@
 				62DB04C11CB405CA004226F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		62DB04C21CB405CA004226F2 /* Build configuration list for PBXNativeTarget "MSKUFrameworkTests" */ = {
 			isa = XCConfigurationList;
@@ -706,6 +699,7 @@
 				62DB04C41CB405CA004226F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		62DB04D71CB40760004226F2 /* Build configuration list for PBXAggregateTarget "MSKUAggregate" */ = {
 			isa = XCConfigurationList;
@@ -714,6 +708,7 @@
 				62DB04D91CB40760004226F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		62DB04FE1CB4078D004226F2 /* Build configuration list for PBXNativeTarget "testSKUApplication" */ = {
 			isa = XCConfigurationList;
@@ -722,6 +717,7 @@
 				62DB05001CB4078D004226F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		62DB05011CB4078D004226F2 /* Build configuration list for PBXNativeTarget "testSKUApplicationTests" */ = {
 			isa = XCConfigurationList;
@@ -730,6 +726,7 @@
 				62DB05031CB4078D004226F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

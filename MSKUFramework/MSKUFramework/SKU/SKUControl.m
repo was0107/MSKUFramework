@@ -7,10 +7,10 @@
 //
 
 #import "SKUControl.h"
-#import "UIView+Factory.h"
 
 
 #define _UIKeyboardFrameEndUserInfoKey (&UIKeyboardFrameEndUserInfoKey != NULL ? UIKeyboardFrameEndUserInfoKey : @"UIKeyboardBoundsUserInfoKey")
+#define kWhiteGrayColor [UIColor colorWithRed:209.0f/255.0f green:213.0f/255.0f blue:219.0f/255.0f alpha:1.0f]
 
 @interface SKUControl()
 @property (nonatomic, strong) UIScrollView *scrollView;
@@ -90,7 +90,7 @@
     }
     rect.origin.y = size.height + _padding;
     
-    [self.scrollView addSubview:[UIView lineViewWithFrame:
+    [self.scrollView addSubview:[self lineViewWithFrame:
                                  CGRectMake(_padding,
                                             size.height + _padding,
                                             _contentSize.width - 2 *_padding, 1)
@@ -99,7 +99,7 @@
     self.numberControl.frame = rect;
     size.height += self.numberControl.frame.size.height + 1 *_padding;
     
-    [self.scrollView addSubview:[UIView lineViewWithFrame:
+    [self.scrollView addSubview:[self lineViewWithFrame:
                                  CGRectMake(_padding,
                                             size.height - 1,
                                             _contentSize.width - 2 *_padding,1)
@@ -235,7 +235,7 @@
 
 - (UIView *) topLineView {
     if (!_topLineView) {
-        _topLineView = [UIView lineViewWithFrame:
+        _topLineView = [self lineViewWithFrame:
                         CGRectMake(_padding, _imageViewSize + _padding - 1,
                                    _contentSize.width - 2 * _padding,1)
                                                    color:kWhiteGrayColor];
@@ -340,5 +340,10 @@
     return _keyboardView;
 }
 
+- (UIView *) lineViewWithFrame:(CGRect) frame color:(UIColor *) color {
+    UIView *view = [[UIView alloc] initWithFrame:frame];
+    view.backgroundColor = color;
+    return view;
+}
 
 @end
